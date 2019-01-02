@@ -25,8 +25,12 @@ if __name__ == '__main__':
     print(luciano.__dict__)
     print(renzo.__dict__)
     del luciano.filhos
+    luciano.olhos = 3
     print(luciano.__dict__)
     print(renzo.__dict__)
+    print(Pessoa.olhos)
+    print(luciano.olhos)
+    print(renzo.olhos)
     print(id(Pessoa.olhos), id(luciano.olhos), id(renzo.olhos))
 
 
